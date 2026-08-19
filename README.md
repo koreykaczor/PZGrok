@@ -30,8 +30,17 @@ ever dead air. Only the survivor frequencies need the helper process.
 
 ## Install
 
+The zip is two pieces. **Keep the extracted folder.** Only the Lua half goes
+into Zomboid.
+
 ```bash
+# 1. Lua mod — this is what the game loads
 cp -r Contents/mods/PZGrok ~/Zomboid/mods/
+
+# 2. Sidecar stays where you unzipped it
+#    PZGrok-main/sidecar/pzgrok.sh
+#    PZGrok-main/sidecar/pzgrok.py
+#    PZGrok-main/sidecar/prompts/
 ```
 
 Enable **Across the River** in the game's **Mods** screen *for the save you
@@ -39,18 +48,25 @@ want to play*. Mods are per-save in B42, so enabling it on the main menu is
 not enough.
 
 Then make pressing Play start the helper too — Steam → Project Zomboid →
-Properties → Launch Options:
+Properties → Launch Options (use the real path on your machine):
 
 ```
-/full/path/to/AcrossTheRiver/sidecar/pzgrok.sh %command%
+/home/YOU/PZGrok-main/sidecar/pzgrok.sh %command%
 ```
 
-To run it by hand instead:
+That starts the sidecar, runs the game, and stops the sidecar on exit.
+
+To run the sidecar by hand instead:
 
 ```bash
-export XAI_API_KEY=xai-...
+mkdir -p ~/.config/pzgrok
+echo 'xai-YOUR-KEY' > ~/.config/pzgrok/api_key
+chmod 600 ~/.config/pzgrok/api_key
 ./sidecar/pzgrok.sh
 ```
+
+If the sidecar is not running, stations still play from the scripted library.
+Survivor frequencies wait ~100s and then go `<no reply>`.
 
 ## The rest of it
 
