@@ -1,0 +1,8 @@
+module Base
+{
+    item Belt2
+    {
+        AttachmentType = Belt,
+        AttachmentsProvided = Walkie;HolsterLeft;HolsterRight,
+    }
+}

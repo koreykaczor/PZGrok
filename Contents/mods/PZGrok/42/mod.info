@@ -1,0 +1,10 @@
+name=Across the River
+id=PZGrok
+author=Korey Kaczor
+description=A radio station, a television station, and survivors across the Ohio River who remember you. Written live by Grok, different every save.
+poster=poster.png
+icon=icon.png
+url=https://github.com/koreykaczor/PZGrok
+version=1.0
+modversion=1.0
+require=

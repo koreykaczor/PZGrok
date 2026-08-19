@@ -1,0 +1,125 @@
+VERSION = 1,
+
+option PZGrok.RadioStation
+{
+    type = boolean,
+    default = true,
+    page = AcrossTheRiver,
+    translation = PZGrok_RadioStation,
+}
+
+option PZGrok.TelevisionStation
+{
+    type = boolean,
+    default = true,
+    page = AcrossTheRiver,
+    translation = PZGrok_TelevisionStation,
+}
+
+option PZGrok.Survivors
+{
+    type = boolean,
+    default = true,
+    page = AcrossTheRiver,
+    translation = PZGrok_Survivors,
+}
+
+option PZGrok.RandomizeCount
+{
+    type = boolean,
+    default = true,
+    page = AcrossTheRiver,
+    translation = PZGrok_RandomizeCount,
+}
+
+option PZGrok.GroupCount
+{
+    type = integer,
+    default = 3,
+    min = 1,
+    max = 15,
+    page = AcrossTheRiver,
+    translation = PZGrok_GroupCount,
+}
+
+option PZGrok.OOC
+{
+    type = boolean,
+    default = false,
+    page = AcrossTheRiver,
+    translation = PZGrok_OOC,
+}
+
+option PZGrok.TransmissionNoise
+{
+    type = integer,
+    default = 12,
+    min = 0,
+    max = 40,
+    page = AcrossTheRiver,
+    translation = PZGrok_TransmissionNoise,
+}
+
+option PZGrok.TestRadio
+{
+    type = boolean,
+    default = false,
+    page = AcrossTheRiver,
+    translation = PZGrok_TestRadio,
+}
+
+option PZGrok.UnknownVoices
+{
+    type = boolean,
+    default = true,
+    page = AcrossTheRiver,
+    translation = PZGrok_UnknownVoices,
+}
+
+option PZGrok.Custom1Name
+{
+    type = string,
+    default = ,
+    page = AcrossTheRiver,
+    translation = PZGrok_Custom1Name,
+}
+
+option PZGrok.Custom1Hook
+{
+    type = string,
+    default = ,
+    page = AcrossTheRiver,
+    translation = PZGrok_Custom1Hook,
+}
+
+option PZGrok.Custom2Name
+{
+    type = string,
+    default = ,
+    page = AcrossTheRiver,
+    translation = PZGrok_Custom2Name,
+}
+
+option PZGrok.Custom2Hook
+{
+    type = string,
+    default = ,
+    page = AcrossTheRiver,
+    translation = PZGrok_Custom2Hook,
+}
+
+option PZGrok.Custom3Name
+{
+    type = string,
+    default = ,
+    page = AcrossTheRiver,
+    translation = PZGrok_Custom3Name,
+}
+
+option PZGrok.Custom3Hook
+{
+    type = string,
+    default = ,
+    page = AcrossTheRiver,
+    translation = PZGrok_Custom3Hook,
+}
