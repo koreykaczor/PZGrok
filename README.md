@@ -1,3 +1,5 @@
+This is 100% vibe coded but worked well. Due to Elon Musk stealing $4 from me for a month of x premium + an immediate month-long suspension by overseas activist groups, I will no longer advocate for any of the big frontier models and I have moved onto local AI. 
+
 # Across the River
 
 A Project Zomboid B42 mod. Three broadcasts, rolled fresh every save and written
